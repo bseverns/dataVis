@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Constellation Orbit – p5.js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.dom.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #000;
+        color: #eee;
+        font-family: system-ui, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #controls { margin-top: 10px; display: flex; flex-direction: column; gap: 4px; font-size: 12px; }
+      .control-row { display: flex; align-items: center; gap: 8px; }
+      .control-row span { min-width: 120px; }
+      #status { margin-top: 6px; font-size: 11px; opacity: 0.75; }
+      canvas { margin-top: 10px; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <main id="canvas-container"></main>
+    <div id="controls"></div>
+    <div id="status"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
